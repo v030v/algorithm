@@ -1,3 +1,8 @@
 n = int(input())
-for i in range(1,10) :
+# for i in range(1,10) :
+#     print(n ,'*', i, '=', n * i)
+
+i = 1
+while i < 10 :
     print(n ,'*', i, '=', n * i)
+    i += 1
