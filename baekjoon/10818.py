@@ -9,6 +9,6 @@ mn = data[0]
 for i in range(1, len(data)) :
     if mx < data[i] :
         mx = data[i]
-    else :
-        mn = data[i]
+    if mn > data[i] :
+        mn = data [i]
 print(mx, mn)
