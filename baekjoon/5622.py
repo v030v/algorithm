@@ -1,8 +1,23 @@
 s = input()
 ls = list(s)
-A=B=C = 3 ; D=E=F = 4; G=H=I = 5; J=K=L = 6; M=N=O = 7; P=Q=R=S = 8; T=U=V = 9; W=X=Y=Z = 10
-tot = 0
-for i in range(len(ls)) :
-    al = ls[i]
-    # tot += ls[i]
-print(ls)
+tm = 0
+
+for i in ls :
+    if ord(i) >= 87 :
+        tm += 10
+    elif ord(i) >= 84 :
+        tm += 9
+    elif ord(i) >= 80 :
+        tm += 8
+    elif ord(i) >= 77 :
+        tm += 7
+    elif ord(i) >= 74 :
+        tm += 6
+    elif ord(i) >= 71 :
+        tm += 5
+    elif ord(i) >= 68 :
+        tm += 4
+    else :
+        tm += 3
+
+print(tm)
